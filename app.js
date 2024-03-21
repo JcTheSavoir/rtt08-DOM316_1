@@ -5,11 +5,11 @@ let gamePieces = {
     sza: 'https://png.pngtree.com/png-vector/20231031/ourmid/pngtree-scissors-black-scissors-blade-png-image_10404910.png'
 }
 
-let playerOnesTurn = true
 //=-----------------------------------{VARIABLES}
 let p1Stage = document.querySelector('.playerOne')
 let p2Stage = document.querySelector('.playerTwo')
 let name = document.querySelector('.name')
+let playerOnesTurn = true
 
 
 let rockImg = document.createElement('img')
@@ -47,12 +47,13 @@ const generateMove = () => {
 
     if(randomNumber === 1) {
         addToBoard(rockImg, 'playerTwo')
+        console.log('rock');
     } else if(randomNumber === 2) {
         addToBoard(paperImg, 'playerTwo')
-        playerOnesTurn = true
+        console.log('paper');
     } else {
         addToBoard(szaImg, 'playerTwo')
-        playerOnesTurn = true
+        console.log('sza');
     }
     playerOnesTurn = true
     console.log(playerOnesTurn)
@@ -73,7 +74,6 @@ const playerOneGo = () => {
 const startGame = () => {
     selectNames()
     alert("player One select Move")
-    generateMove()
 }
 
 
