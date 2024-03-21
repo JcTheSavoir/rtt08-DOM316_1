@@ -1,0 +1,62 @@
+.title{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.gameBoard{
+    border: solid black;
+    height: 52vh;
+    display: flex;
+    padding: 1em;
+}
+.scoreBoard{
+    /* border: solid blue; */
+    height: 22vh;
+    margin: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.playerOne{
+    border: solid purple;
+    width: 40%;
+}
+.playerTwo{
+    border: solid green;
+    width: 40%;
+}
+.symbol{
+    border: orange;
+    width: 20%;
+}
+.p1Score{
+    border: solid purple;
+    width: 50%;
+    margin: 1em;
+}
+.p2Score{
+    border: solid green;
+    width: 50%;
+    margin: 1em;
+}
+.start{
+    width: 90%;
+    margin: 1em;;
+}
+.options{
+    /* border: solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+.rock,.paper,.sza{
+    height: 30px;
+    width: 30px;
+}
+
+.rock:hover,.paper:hover,.sza:hover{
+    height: 30px;
+    border: solid green;
+    border-radius: 50%;
+}
+.name{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
