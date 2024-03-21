@@ -29,6 +29,9 @@ szaImg.setAttribute('class','sza')
 const addToBoard = (item, whichPlayer) => {
     let currentPlayer = document.querySelector(`.${whichPlayer}`)
     currentPlayer.append(item)
+    if(playerOnesTurn === false) {
+        return 
+    }
     playerOnesTurn = false
     console.log('Should be false now')
     console.log(playerOnesTurn);
