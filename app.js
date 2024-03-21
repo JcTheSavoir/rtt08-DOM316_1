@@ -6,8 +6,8 @@ let gamePieces = {
 }
 
 //=-----------------------------------{VARIABLES}
-let p1Stage = document.querySelector('.playerOne')
-let p2Stage = document.querySelector('.playerTwo')
+// let p1Stage = document.querySelector('.playerOne')
+// let p2Stage = document.querySelector('.playerTwo')
 let name = document.querySelector('.name')
 let playerOnesTurn = true
 

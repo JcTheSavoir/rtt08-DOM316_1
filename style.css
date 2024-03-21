@@ -6,6 +6,7 @@
     border: solid black;
     height: 52vh;
     display: flex;
+    justify-content: space-evenly;
     padding: 1em;
 }
 .scoreBoard{
@@ -17,15 +18,24 @@
 }
 .playerOne{
     border: solid purple;
-    width: 40%;
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content:space-between;
 }
 .playerTwo{
     border: solid green;
-    width: 40%;
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content:space-between;
 }
 .symbol{
-    border: orange;
-    width: 20%;
+    border: solid orange;
+    width: 40%;
+
 }
 .p1Score{
     border: solid purple;
@@ -38,25 +48,37 @@
     margin: 1em;
 }
 .start{
-    width: 90%;
-    margin: 1em;;
+    width: 50%;
+    display: block;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 .options{
-    /* border: solid black; */
+    border: solid black;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
+    height: 100%;
 }
 .rock,.paper,.sza{
-    height: 30px;
-    width: 30px;
+    max-height: 50%;
+    padding: 5%;
+    max-width: 90%;
 }
 
-.rock:hover,.paper:hover,.sza:hover{
-    height: 30px;
+.rock:hover,.paper:hover,.sza:hover{  
+    max-height: 40%;
+    padding: 5%;
+    max-width: 80%;
     border: solid green;
     border-radius: 50%;
 }
 .name{
+    font-size: 40px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-self: flex-start;
 }
